@@ -1,10 +1,11 @@
 # DotWeb
 Simple and easy go web micro framework 
 
-document: http://dotweb.devfeel.com/doc
+document: https://www.kancloud.cn/devfeel/dotweb/346608
 
 [![GoDoc](https://godoc.org/github.com/devfeel/dotweb?status.svg)](https://godoc.org/github.com/devfeel/dotweb)
 [![Go Report Card](https://goreportcard.com/badge/github.com/devfeel/dotweb)](https://goreportcard.com/report/github.com/devfeel/dotweb)
+[![Go Build Card](https://travis-ci.org/devfeel/dotweb.svg?branch=master)](https://travis-ci.org/devfeel/dotweb.svg?branch=master)
 
 ## 1. Install
 
@@ -52,7 +53,7 @@ dotweb.conf
 <config>
 <app logpath="d:/gotmp/" enabledlog="true" runmode="development"/>
 <offline offline="false" offlinetext="server is offline!" offlineurl="" />
-<server isrun="true" port="8080" enabledgzip="false" enabledlistdir="false" enabledautohead="true"/>
+<server isrun="true" port="8080" indexpage="index.html" enabledgzip="false" enabledlistdir="false" enabledautohead="true"/>
 <session enabled="true" mode="runtime" timeout="20"/>
 <middlewares>
     <middleware name="applog" isuse="true" />
