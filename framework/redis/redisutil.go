@@ -280,7 +280,6 @@ func (rc *RedisClient) ConnGet() redis.Conn{
 }
 
 
-
 func (rc *RedisClient) SAdd(args ...interface{}) (int64, error){
 	conn := rc.pool.Get()
 	defer conn.Close()
